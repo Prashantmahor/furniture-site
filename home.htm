@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Elm - Modern Furniture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="#">Pottery Barn</a>
+            <a href="#">Pottery Barn Kids</a>
+        </div>
+        <div class="header">
+            <h1 class="logo">west elm</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-links">
+                <a href="#"><i class="fas fa-user"></i> Account</a>
+                <a href="#"><i class="fas fa-heart"></i> Favorites</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Furniture</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Living Room</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Office</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Outdoor & Garden</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Patio Furniture</a></li>
+                        <li><a href="#">Outdoor Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bedding & Bath</a></li>
+                <li><a href="#">Pillows & Decor</a></li>
+                <li><a href="#">Kitchen & Dining</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Rugs</a></li>
+                <li><a href="#">Art & Mirrors</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Diwali</a></li>
+            </ul>
+        </nav>
+    </header>
+<video src="https://www.westelm.com/shop/new/winter-collection/?cm_re=hero1-_-hero-_-NewWinterCollection"></video>
+    <main>
+        <!-- Hero Slider Section -->
+        <div class="hero-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://example.com/hero-image1.jpg" alt="Image 1">
+                    <div class="slide-text">
+                        <h2>Welcome the season</h2>
+                        <p>Get ready for Diwali</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://example.com/hero-image2.jpg" alt="Image 2">
+                    <div class="slide-text">
+                        <h2>Modern Furniture</h2>
+                        <p>Style your space</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://example.com/hero-image3.jpg" alt="Image 3">
+                    <div class="slide-text">
+                        <h2>Luxury Living</h2>
+                        <p>Discover our new collection</p>
+                        <a href="#" class="shop-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="slider-nav">
+                <span class="prev"><i class="fas fa-chevron-left"></i></span>
+                <span class="next"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+
+        <section class="featured-section">
+            <h3>Featured Products</h3>
+            <div class="featured-items">
+                <div class="item">
+                    <img src="https://example.com/sofa.jpg" alt="Sofa">
+                    <p>Modern Sofa</p>
+                </div>
+                <div class="item">
+                    <img src="https://example.com/table.jpg" alt="Dining Table">
+                    <p>Dining Table Set</p>
+                </div>
+                <div class="item">
+                    <img src="https://example.com/bed.jpg" alt="Bed">
+                    <p>Queen Size Bed</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 West Elm. All rights reserved.</p>
+    </footer>
+
+    <script >
+        // Hero Slider Logic
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentIndex = 0;
+let autoSlideInterval;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+    const offset = index * -100;
+    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+function autoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+}
+
+// Event Listeners
+nextBtn.addEventListener('click', () => {
+    clearInterval(autoSlideInterval);
+    nextSlide();
+    autoSlide(); // Restart auto slide
+});
+
+prevBtn.addEventListener('click', () => {
+    clearInterval(autoSlideInterval);
+    prevSlide();
+    autoSlide(); // Restart auto slide
+});
+
+// Start the slider
+autoSlide();
+
+    </script>
+</body>
+</html>
+
+backdrop-filter: blur();
+background: linear-gradient(to right, #ff7e5f, #feb47b);

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora - Modern Furniture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <a href="#">Pottery Barn</a>
+            <a href="#">Pottery Barn Kids</a>
+            <button id="Get-started">Get started</button>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="image-container">
+                        <img src="intro-img1.jpg" alt="Stylish Furniture">
+                    </div>
+                    <div class="form-container">
+                        <span class="close-btn" id="closePopup">&nbsp;&nbsp;&nbsp;&times;</span>
+                        <h2>Create Your Account</h2>
+                        <form id="registrationForm">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <label><br>
+                                <input type="checkbox" value="on" required> I agree to the Terms & Conditions
+                            </label>
+                            <button id="register-btn" type="submit">Register</button>
+                        </form>
+                        <p><a href="#" id="anchor">Already have an account?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <img class="logo" src="logo.jpg" alt="">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <i class="fas fa-user"></i>
+                    <a href="#">Account</a>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-truck"></i>
+                    <a href="#">Track Order</a>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">My Store</a>
+                </li>
+                <li class="menu-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <a href="#">Favorites</a>
+                </li>
+                <li class="menu-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#">Cart</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Furniture</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Living Room</a></li>
+                        <hr>
+                        <li><a href="#">Bedroom</a></li>
+                        <hr>
+                        <li><a href="#">Office</a></li>
+                        <hr>
+                        <li><a href="#">Outdoor</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Outdoor & Garden</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Patio Furniture</a></li>
+                        <hr>
+                        <li><a href="#">Outdoor Decor</a></li>
+                        <hr>
+                        <li><a href="#">Garden decor</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Bedding & Bath</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Bed Linen</a></li>
+                        <hr>
+                        <li><a href="#">Beth Area</a></li>
+                        <hr>
+                        <li><a href="#">LCD Cabinat</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Pillows & Decor</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Pillows & Throws</a></li>
+                        <hr>
+                        <li><a href="#">Planters</a></li>
+                        <hr>
+                        <li><a href="#">Botanicals</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Kitchen & Dining</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Dinnerware</a></li>
+                        <hr>
+                        <li><a href="#">Serveware</a></li>
+                        <hr>
+                        <li><a href="#">Table Linen</a></li>
+                        <hr>
+                        <li><a href="#">Glassware</a></li>
+                        <hr>
+                        <li><a href="#">Flatware</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Lighting</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Table Lamps</a></li>
+                        <hr>
+                        <li><a href="#">Ceiling Lighting</a></li>
+                        <hr>
+                        <li><a href="#">Floor Lamps</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Rugs</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Solid Rugs</a></li>
+                        <hr>
+                        <li><a href="#">Wool Rugs</a></li>
+                        <hr>
+                        <li><a href="#">Tancel Rugs</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Art</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Mirrors</a></li>
+                        <hr>
+                        <li><a href="#">Picture Frames</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Gifts</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">For Him</a></li>
+                        <hr>
+                        <li><a href="#">For Her</a></li>
+                        <hr>
+                        <li><a href="#">Luxury Decor</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Sale</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">20%off</a></li>
+                        <hr>
+                        <li><a href="#">40%off</a></li>
+                        <hr>
+                        <li><a href="#">60%off</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Diwali</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Gifts</a></li>
+                        <hr>
+                        <li><a href="#">Festive Decor</a></li>
+                        <hr>
+                        <li><a href="#">Furniture Upgrades</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="diining.jpg" alt="Image 1">
+
+                </div>
+                <div class="slide">
+                    <img src="glass.jpg" alt="Image 2">
+
+                </div>
+                <div class="slide">
+                    <img src="khatia.jpg" alt="Image 3">
+
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="slider-nav">
+                <span class="prev"><i class="fas fa-chevron-left"></i></span>
+                <span class="next"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+
+
+        <section class="featured-section" data-aos="fade-up" data-aos-duration="800">
+            <h3>Featured Products</h3>
+            <div class="featured-items">
+                <div class="item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409121220_Primary_Sub_Cat_1.jpg"
+                        alt="Sofa">
+                    <div class="comment"><span>Sofas & Sectionals </span><br>Transform your living space with our
+                        luxurious sofas and sectionals, designed for ultimate comfort and style. Crafted with premium
+                        materials, these pieces offer both elegance and functionality for a cozy and modern living room
+                        experience.
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="600">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131211_Primary_Sub_Cat_7.jpg"
+                        alt="Dining Table">
+                    <div class="comment"><span>Chairs</span><br>Discover the perfect blend of comfort and sophistication
+                        with our versatile chairs. From accent chairs to recliners, each piece is thoughtfully designed
+                        to elevate any room while providing unmatched support and style.
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="800">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131215_Primary_Sub_Cat_3.jpg"
+                        alt="Bed">
+                    <div class="comment"><span>Coffee Tables</span><br>Complete your living space with our stylish
+                        coffee tables, designed to bring functionality and charm. Whether modern, rustic, or classic,
+                        these tables provide a perfect centerpiece for your gatherings or a practical surface for daily
+                        essentials.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="f1" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+            <img class="f1-img" src="gathering1.jpg" alt="">
+            <h3>Featured Products</h3>
+            <div class="featured-items">
+                <div class="item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131226_Primary_Sub_Cat_8.jpg"
+                        alt="Sofa">
+                    <div class="comment"><span>Coffee Table</span><br>Complete your living space with our stylish coffee
+                        tables, designed to bring functionality and charm. Whether modern, rustic, or classic, these
+                        tables provide a perfect centerpiece for your gatherings or a practical surface for daily
+                        essentials.
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+                    <div class="comment"><span>Dinnerware</span><br>Elevate every meal with our exquisite dinnerware
+                        sets, crafted to combine elegance with durability. From casual dinners to special occasions, our
+                        dinnerware enhances the dining experience with timeless designs and premium quality.
+                    </div>
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131226_Primary_Sub_Cat_7.jpg"
+                        alt="Dining Table">
+
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="750">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409121118_Primary_Sub_Cat_4.png"
+                        alt="Bed">
+                    <div class="comment"><span>Dining Room</span><br>Create a welcoming dining space with our stunning
+                        dining room furniture. From chic tables to comfortable chairs, these pieces are designed for
+                        both style and functionality, making every meal an enjoyable and memorable experience.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="f1" data-aos="fade-left" data-aos-duration="800">
+            <img class="f1-img" src="bed.jpg" alt="">
+            <h3>Featured Products</h3>
+            <div class="featured-items">
+                <div class="item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131227_Primary_Sub_Cat_7_1.jpg"
+                        alt="Sofa">
+                    <div class="comment"><span>Pillows</span><br>Add a pop of color and comfort to your home with our
+                        luxurious pillows. Perfect for sofas, beds, or chairs, these cushions combine style with plush
+                        comfort to enhance your décor while providing the coziest touch.
+                    </div>
+                </div>
+                <div class="item D1" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409121212_Primary_Sub_Cat_1.jpg"
+                        alt="Dining Table">
+                    <div class="comment"><span>Decor</span><br>Personalize your space with our unique décor pieces,
+                        designed to inspire and transform any room. From modern art to timeless accessories, each item
+                        adds personality, elevating your home’s aesthetic with creativity and elegance.
+                    </div>
+                </div>
+                <div class="item D2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                    <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409131228_Primary_Sub_Cat_8_1.jpg"
+                        alt="Bed">
+                    <div class="comment"><span>Lighting</span><br>Illuminate your home with our stylish and functional
+                        lighting solutions. From chic chandeliers to modern floor lamps, each piece creates the perfect
+                        ambiance while adding a touch of elegance and warmth to any space.</div>
+                </div>
+            </div>
+        </section>
+        <section class="f1" data-aos="fade-up" data-aos-duration="800">
+            <img class="f1-img"
+                src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/original/westelm/banner/306_202409121111_Full_Width.png"
+                alt="">
+
+            <div class="diff">
+                <div class="item block" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="comment Flex">
+                        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/t.resize(h:500,w:500)/data/Westelm/22062022img/8324360_1.jpg"
+                            alt="Sofa">
+                        <p class="ram"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modern Crockery</span><br>
+                        <ul class="list">
+                            <li>Enhance your dining experience with exquisite modern crockery.</li>
+                            <li>Designed to impress both visually and functionally.</li>
+                            <li>Crafted with precision for sleek, contemporary designs.</li>
+                            <li>Suitable for casual brunches and formal dinners.</li>
+                            <li>Made from high-quality materials, durable for everyday use.</li>
+                            <li>Offers a luxurious feel with a variety of patterns, textures, and finishes.</li>
+                            <li>Blends style with practicality for beautiful dining moments.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="itemR block" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                    <div class="comment Flex">
+                        <p><span>Urban Interior</span><br>
+                        <ul class="list">
+                            <li>Transform your living space with chic and sophisticated designs.</li>
+                            <li>Features sleek lines, bold accents, and minimalist aesthetics.</li>
+                            <li>Creates a clean yet vibrant atmosphere.</li>
+                            <li>Ideal for furnishing lofts or updating apartments.</li>
+                            <li>Seamlessly blends form and function.</li>
+                            <li>Includes statement furniture and understated décor.</li>
+                            <li>Reflects the dynamic energy of urban living for an inviting space.</li>
+                        </ul>
+                        </p>
+                        <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/t.resize(h:500,w:500)/data/Westelm/23052023img/8622958_1.jpg"
+                            alt="Dining Table">
+                    </div>
+
+
+                </div>
+                <div class="item block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                    <div class="comment Flex"><img
+                            src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/t.resize(h:500,w:500)/data/Westelm/08apr2024/10124099_1.jpg"
+                            alt="Bed">
+                        <p><span>&nbsp;&nbsp;&nbsp;&nbsp; Luxurious Ceramics</span> <br>
+                        <ul class="list">
+                            <li>Indulge in refined beauty with luxurious ceramics.</li>
+                            <li>Timeless craftsmanship meets contemporary design.</li>
+                            <li>Handcrafted by skilled artisans for one-of-a-kind creations.</li>
+                            <li>Perfect for display and functional use.</li>
+                            <li>Includes stunning vases and exquisite dinnerware.</li>
+                            <li>Made from premium materials with intricate detailing.</li>
+                            <li>Designed to impress and stand the test of time, reflecting luxury and impeccable
+                                craftsmanship.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gallery">
+                <div class="gallery-item" data-aos="fade-up">
+                    <img src="https://assets.weimgs.com/weimgs/ab/images/dp/ecm/202440/3506/118/005.jpg"
+                        alt="Sofas & Sectionals">
+
+                </div>
+                <div class="gallery-item " data-aos="fade-up" data-aos-delay="100">
+                    <img src="lamp2.jpg" alt="Coffee Tables">
+
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://assets.weimgs.com/weimgs/ab/images/dp/ecm/202440/3506/123/008.jpg"
+                        alt="Lighting Fixtures">
+
+                </div>
+                <div class="gallery-item " data-aos="fade-up" data-aos-delay="300">
+                    <img src="sofa2.jpg" alt="Lighting Fixtures">
+
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="vas2.jpg" alt="Pillows & Throws">
+
+                </div>
+                <div class="gallery-item big" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://assets.weimgs.com/weimgs/ab/images/dp/ecm/202440/3506/120/004.jpg" alt="Bedding">
+
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="sofa3.jpg" alt="Plant & Mirror">
+
+                </div>
+                <div class="gallery-item big" data-aos="fade-up" data-aos-delay="600">
+                    <img src="https://assets.weimgs.com/weimgs/ab/images/dp/ecm/202440/3506/118/088.jpg"
+                        alt="Plant & Mirror">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Customer service</h3>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Track your order</a></li>
+                    <li><a href="#">Returns & exchanges</a></li>
+                    <li><a href="#">Help topics</a></li>
+                    <li><a href="#">Shipping information</a></li>
+                    <li><a href="#">International orders</a></li>
+                    <li><a href="#">Give us feedback</a></li>
+                    <li><a href="#">Safety recalls</a></li>
+                    <li><a href="#">Email preferences</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">The Key Rewards</a></li>
+                    <li><a href="#">Apply for credit card</a></li>
+                    <li><a href="#">Manage credit card account</a></li>
+                    <li><a href="#">Pay bill online</a></li>
+                    <li><a href="#">Monthly payment plan</a></li>
+                    <li><a href="#">Affirm</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Do not sell or share my personal information</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>More about us</h3>
+                <ul>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Responsible retail glossary</a></li>
+                    <li><a href="#">Designers & tastemakers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Find a store</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Design services</h3>
+                <ul>
+                    <li><a href="#">Meet with design crew</a></li>
+                    <li><a href="#">Room planner</a></li>
+                </ul>
+                <h3>B2B programs</h3>
+                <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">West Elm TRADE</a></li>
+                    <li><a href="#">West Elm CONTRACT</a></li>
+                    <li><a href="#">West Elm WORK</a></li>
+                </ul>
+                <h3>Shop the app</h3>
+                <ul>
+                    <li><a href="#">Apple store download</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Sign up for sale, new arrivals & more</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email">
+                    <button  type="submit">Submit</button>
+                </form>
+                <p>California residents, please see the <a href="#">Financial Incentive Terms</a> for terms.</p>
+                <div class="social-icons">
+                    <a href="#"><img
+                            src="http://pluspng.com/img-png/instagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png"
+                            alt="Instagram"></a>
+                    <a href="#"><img
+                            src="https://cdn.techgyd.com/50-Best-Facebook-Logo-Icons-GIF-Transparent-PNG-Images-33.png"
+                            alt="Twitter"></a>
+                    <a href="#"><img
+                            src="https://tse3.mm.bing.net/th?id=OIP.IUgqrrXDKOOudBCC5KzAjwHaHa&pid=Api&P=0&h=180"
+                            alt="Facebook"></a>
+                    <a href="#"><img
+                            src="https://tse3.mm.bing.net/th?id=OIP.GJt-a0xRehdUYQ4njfQ3fAHaHa&pid=Api&P=0&h=180"
+                            alt="Pinterest"></a>
+                    <a href="#"><img src="https://freepnglogo.com/images/all_img/1707222563twitter-logo-png.png"
+                            alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© All Rights Reserved, 2024 Williams-Sonoma Inc.</p>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="home2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .gallery-item {
+    width: 23%;
+    margin-bottom: 20px;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .gallery-item p {
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery">
+  <div class="gallery-item" data-aos="fade-up">
+    <img src="bed.jpg" alt="Sofas & Sectionals">
+    <p>Sofas & Sectionals</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+    <img src="bed.jpg" alt="Coffee Tables">
+    <p>Coffee Tables</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+    <img src="bed.jpg" alt="Lighting Fixtures">
+    <p>Lighting</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="450">
+    <img src="bed.jpg" alt="Lighting Fixtures">
+    <p>Lighting</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+    <img src="bed.jpg" alt="Pillows & Throws">
+    <p>Pillows & Throws</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="750">
+    <img src="bed.jpg" alt="Bedding">
+    <p>Bedding</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="900">
+    <img src="bed.jpg" alt="Plant & Mirror">
+    <p>Plant & Mirror</p>
+  </div>
+  <div class="gallery-item" data-aos="fade-up" data-aos-delay="1050">
+    <img src="bed.jpg" alt="Plant & Mirror">
+    <p>Plant & Mirror</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
